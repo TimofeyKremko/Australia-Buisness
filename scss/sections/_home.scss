@@ -1,0 +1,61 @@
+.home {
+  background: url('../../assets/home-background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+
+  &__container {
+    row-gap: 10rem;
+  }
+
+  &__content {
+    margin-top: 10rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1.2rem;
+    max-width: 30rem;
+    padding: $mb-1-5;
+    color: $container-color;
+
+  }
+
+  &__title {
+    color: $container-color;
+    margin-bottom: $mb-1-5;
+  }
+
+  &__scroll {
+    margin-left: $mb-1-5;
+
+    &-name {
+      color: $container-color;
+      font-weight: $font-medium;
+      margin-left: 2px;
+    }
+
+  }
+
+  .wheel {
+    animation: scroll 2s ease infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+
+    30% {
+      transform: translateY(3.75rem);
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  .home__scroll {
+    display: none;
+  }
+}

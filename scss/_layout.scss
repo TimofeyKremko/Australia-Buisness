@@ -1,0 +1,32 @@
+.container {
+  max-width: 1206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: $title-color;
+  color: $container-color;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: $font-medium;
+}
+
+.button:hover {
+  background-color: $title-color-dark;
+}
+
+.button__icon {
+  margin-left: $mb-0-5;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}

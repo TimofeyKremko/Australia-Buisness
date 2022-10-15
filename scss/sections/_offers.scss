@@ -6,7 +6,7 @@
   }
 
   &__block {
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 350px 1fr;
     column-gap: 3rem;
   }
 
@@ -68,14 +68,24 @@
   }
 }
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 576px) {
   .offers__container {
     row-gap: 5rem;
   }
+
   .block {
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
     &__img {
       width: 100%;
     }
+
     &__bottom {
       flex-wrap: wrap;
       row-gap: 2rem;

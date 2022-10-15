@@ -339,8 +339,8 @@ img {
 }
 
 .offers__block {
-  -ms-grid-columns: 450px 1fr;
-      grid-template-columns: 450px 1fr;
+  -ms-grid-columns: 350px 1fr;
+      grid-template-columns: 350px 1fr;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
 }
@@ -406,6 +406,12 @@ img {
 @media screen and (max-width: 576px) {
   .offers__container {
     row-gap: 5rem;
+  }
+  .block__title {
+    text-align: center;
+  }
+  .block__text {
+    text-align: justify;
   }
   .block__img {
     width: 100%;

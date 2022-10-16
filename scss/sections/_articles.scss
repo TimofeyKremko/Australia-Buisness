@@ -1,0 +1,33 @@
+.articles {
+  .section__subtitle {
+    max-width: 730px;
+    margin: 0 auto 4rem;
+  }
+
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+
+  .article {
+    background-color: $container-color;
+    &__img {
+      img {
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      padding: 1rem;
+    }
+
+    &__title {
+      margin: $mb-0-5 0;
+    }
+
+    &__text {
+      margin-bottom: $mb-1-5;
+    }
+  }
+}

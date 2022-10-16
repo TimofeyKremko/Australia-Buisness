@@ -428,4 +428,38 @@ img {
             justify-content: center !important;
   }
 }
+
+.articles .section__subtitle {
+  max-width: 730px;
+  margin: 0 auto 4rem;
+}
+
+.articles__container {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.articles .article {
+  background-color: #fff;
+}
+
+.articles .article__img img {
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articles .article__content {
+  padding: 1rem;
+}
+
+.articles .article__title {
+  margin: 0.5rem 0;
+}
+
+.articles .article__text {
+  margin-bottom: 1.5rem;
+}
 /*# sourceMappingURL=index.css.map */

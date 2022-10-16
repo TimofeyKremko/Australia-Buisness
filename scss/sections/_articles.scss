@@ -2,6 +2,7 @@
   .section__subtitle {
     max-width: 730px;
     margin: 0 auto 4rem;
+    padding: 0 1rem;
   }
 
   &__container {
@@ -11,6 +12,8 @@
 
   .article {
     background-color: $container-color;
+    border-radius: 1rem;
+
     &__img {
       img {
         border-radius: 1rem;
@@ -28,6 +31,35 @@
 
     &__text {
       margin-bottom: $mb-1-5;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .articles {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .articles {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .article {
+    background-color: $container-color;
+    border-radius: 1rem;
+
+    &__img {
+      display: flex;
+      justify-content: center;
     }
   }
 }
